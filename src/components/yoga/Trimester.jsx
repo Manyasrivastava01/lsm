@@ -11,30 +11,30 @@ function Trimester({ handleTrimesterSelection }) {
         >
           Back
         </a>
-        <h1 className="font-bold text-3xl mb-4">Trimester Selection</h1>
+        <h1 className="font-bold text-3xl mb-4">Experience Selection</h1>
         <button
           className="bg-[#F38FB1] text-white py-3 px-10 rounded-full my-2 w-full transition-transform transform hover:scale-105"
           onClick={() => handleTrimesterSelection(1)} // First Trimester
         >
-          First Trimester
+          3 Months
         </button>
         <button
           className="bg-[#F38FB1] text-white py-3 px-10 rounded-full my-2 w-full transition-transform transform hover:scale-105"
           onClick={() => handleTrimesterSelection(2)} // Second Trimester
         >
-          Second Trimester
+          6 Months
         </button>
         <button
           className="bg-[#F38FB1] text-white py-3 px-10 rounded-full my-2 w-full transition-transform transform hover:scale-105"
           onClick={() => handleTrimesterSelection(3)} // Third Trimester
         >
-          Third Trimester
+          9 Months
         </button>
         <button
           className="bg-[#F38FB1] text-white py-3 px-10 rounded-full my-2 w-full transition-transform transform hover:scale-105"
           onClick={() => alert("Avoid Exercises")} // Avoid Exercises button
         >
-          Avoid Exercises
+          12 Months 
         </button>
       </div>
 

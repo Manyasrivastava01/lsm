@@ -1,13 +1,13 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Book1Image from "../../assets/book1.jpeg";
-import Book2Image from "../../assets/book2.jpeg";
-import Book3Image from "../../assets/book3.jpeg";
-import Book4Image from "../../assets/book4.jpeg";
-import Book5Image from "../../assets/book5.jpeg";
-import Book6Image from "../../assets/book6.jpeg";
-import Book7Image from "../../assets/book7.jpeg";
-import Book8Image from "../../assets/book8.jpeg";
+import Book1Image from "../../assets/book1.jpg";
+import Book2Image from "../../assets/book2.jpg";
+import Book3Image from "../../assets/book3.jpg";
+import Book4Image from "../../assets/book4.jpg";
+import Book5Image from "../../assets/book5.jpg";
+import Book6Image from "../../assets/book6.jpg";
+import Book7Image from "../../assets/book7.jpg";
+import Book8Image from "../../assets/book8.jpg";
 import Book9Image from "../../assets/book9.jpg";
 import Book10Image from "../../assets/book10.jpg";
 import Book11Image from "../../assets/book11.jpg";
@@ -21,14 +21,14 @@ function BooksSection() {
 
   // Define books with the same PDF for all
   const books = [
-    { image: Book1Image, title: "When You're Expecting", pdf: samplePDF1 },
-    { image: Book2Image, title: "The Mama Natural", pdf: samplePDF1 },
-    { image: Book3Image, title: "Bringing Up Bébé", pdf: samplePDF1 },
-    { image: Book4Image, title: "The Whole-Brain Child", pdf: samplePDF1 },
-    { image: Book5Image, title: "Expecting Better", pdf: samplePDF1 },
-    { image: Book6Image, title: "Belly Laughs", pdf: samplePDF1 },
-    { image: Book7Image, title: "Pregnancy Day by Day", pdf: samplePDF1 },
-    { image: Book8Image, title: "The Birth Partner", pdf: samplePDF1 },
+    { image: Book1Image, title: "The 12 Week Fitness Project", pdf: samplePDF1 },
+    { image: Book2Image, title: "Eating In The Age Of Dieting", pdf: samplePDF1 },
+    { image: Book3Image, title: "Fitness Motivation Mindset", pdf: samplePDF1 },
+    { image: Book4Image, title: "Don't lose your Mind Lose your weight", pdf: samplePDF1 },
+    { image: Book5Image, title: "The Champion's Mind", pdf: samplePDF1 },
+    { image: Book6Image, title: "Men's Health: 6 Week to a 6 Pack", pdf: samplePDF1 },
+    { image: Book7Image, title: "The Abs Diet", pdf: samplePDF1 },
+    { image: Book8Image, title: "BodyWeight Strength Training Anatomy", pdf: samplePDF1 },
     { image: Book9Image, title: "Food And Nutrition", pdf: samplePDF1 },
     { image: Book10Image, title: "A Guide to Fitness Perfection", pdf: samplePDF1 },
     { image: Book11Image, title: "The Complete Guide To Gym Exercises", pdf: samplePDF1 },
