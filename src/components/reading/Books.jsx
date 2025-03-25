@@ -8,10 +8,10 @@ import Book5Image from "../../assets/book5.jpeg";
 import Book6Image from "../../assets/book6.jpeg";
 import Book7Image from "../../assets/book7.jpeg";
 import Book8Image from "../../assets/book8.jpeg";
-import Book9Image from "../../assets/book9.jpeg";
-import Book10Image from "../../assets/book10.jpeg";
-import Book11Image from "../../assets/book11.jpeg";
-import Book12Image from "../../assets/book12.jpeg";
+import Book9Image from "../../assets/book9.jpg";
+import Book10Image from "../../assets/book10.jpg";
+import Book11Image from "../../assets/book11.jpg";
+import Book12Image from "../../assets/book12.jpg";
 import samplePDF1 from "../../assets/pdf1.pdf"; // Import the PDF file
 
 function BooksSection() {
@@ -29,10 +29,10 @@ function BooksSection() {
     { image: Book6Image, title: "Belly Laughs", pdf: samplePDF1 },
     { image: Book7Image, title: "Pregnancy Day by Day", pdf: samplePDF1 },
     { image: Book8Image, title: "The Birth Partner", pdf: samplePDF1 },
-    { image: Book9Image, title: "Natural Childbirth", pdf: samplePDF1 },
-    { image: Book10Image, title: "Happiest Baby on the Block", pdf: samplePDF1 },
-    { image: Book11Image, title: "The Ima's Guide to Pregnancy", pdf: samplePDF1 },
-    { image: Book12Image, title: "Childbirth and the Newborn", pdf: samplePDF1 },
+    { image: Book9Image, title: "Food And Nutrition", pdf: samplePDF1 },
+    { image: Book10Image, title: "A Guide to Fitness Perfection", pdf: samplePDF1 },
+    { image: Book11Image, title: "The Complete Guide To Gym Exercises", pdf: samplePDF1 },
+    { image: Book12Image, title: "THE GYM: A book on healthclub", pdf: samplePDF1 },
   ];
 
   const booksPerPage = 3;
