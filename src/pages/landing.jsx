@@ -24,12 +24,12 @@ function Landing() {
         <div className="flex flex-row">
           <div className="px-64 items-start flex flex-col py-48">
             <motion.div 
-              className="text-5xl font-bold text-pink-500"
+              className="text-5xl font-bold text-blue-500"
               initial={{ opacity: 0, y: -30 }} 
               animate={{ opacity: 1, y: 0 }} 
               transition={{ duration: 0.5 }} 
             >
-              Motherly
+             SWASTHAVERSE
             </motion.div>
             <motion.div 
               className="text-4xl font-bold pt-8 italic"
@@ -37,8 +37,7 @@ function Landing() {
               animate={{ opacity: 1, y: 0 }} 
               transition={{ duration: 0.5, delay: 0.2 }} 
             >
-              Find yourself in the journey!
-            </motion.div>
+Digital Health & Fintess for India            </motion.div>
             <div className="flex flex-row py-8">
               <Link to="/signup">
                 <motion.button
@@ -62,7 +61,7 @@ function Landing() {
           </div>
           <div className="w-1/6 py-36">
             <motion.img 
-              src={Mom} 
+              src="{Mom}" 
               alt="" 
               initial={{ opacity: 0 }} 
               animate={{ opacity: 1 }} 
