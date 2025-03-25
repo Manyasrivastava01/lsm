@@ -50,7 +50,7 @@ function AnkleRotation() {
           <iframe
             width="100%"
             height="315"
-            src="https://www.youtube.com/embed/DYp_XvUqZJ0" // Correct YouTube embed URL for Ankle Rotation
+            src="https://www.youtube.com/embed/pUkhD42tT7s" // Correct YouTube embed URL for Ankle Rotation
             title="Ankle Rotation Tutorial"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -58,21 +58,28 @@ function AnkleRotation() {
           ></iframe>
         </div>
         <div className="w-1/4 pl-4">
-          <h2 className="font-bold text-2xl mb-2">Ankle Rotation Instructions</h2>
+          <h2 className="font-bold text-2xl mb-2">
+            Ankle Rotation Instructions
+          </h2>
           <p>
             1. Sit on the floor with your legs extended in front of you.
             <br />
-            2. Gently rotate your right ankle clockwise in slow, controlled circles.
+            2. Gently rotate your right ankle clockwise in slow, controlled
+            circles.
             <br />
-            3. After 10 rotations, switch directions and rotate counterclockwise.
+            3. After 10 rotations, switch directions and rotate
+            counterclockwise.
             <br />
             4. Repeat the same with your left ankle.
             <br />
-            5. Continue for 30 seconds to a minute, alternating between both ankles.
+            5. Continue for 30 seconds to a minute, alternating between both
+            ankles.
           </p>
         </div>
       </div>
-      <div className="flex flex-row items-start space-x-4 mt-0.5"> {/* Reduced margin-top to push buttons up */}
+      <div className="flex flex-row items-start space-x-4 mt-0.5">
+        {" "}
+        {/* Reduced margin-top to push buttons up */}
         {!isActive ? (
           <button
             className={`bg-[#F38FB1] text-white py-2 px-4 rounded-full transition-transform transform hover:scale-105 ${
@@ -99,7 +106,9 @@ function AnkleRotation() {
         </button>
       </div>
       <div className="mt-4">
-        <span className="text-xl font-bold">{isActive ? `Time Left: ${timeLeft}s` : `Paused: ${timeLeft}s`}</span>
+        <span className="text-xl font-bold">
+          {isActive ? `Time Left: ${timeLeft}s` : `Paused: ${timeLeft}s`}
+        </span>
       </div>
     </motion.div>
   );

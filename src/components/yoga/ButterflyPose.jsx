@@ -45,12 +45,14 @@ function ButterflyPose() {
       >
         Back
       </a> */}
-      <div className="flex flex-row w-full mb-2 mt-2"> {/* Reduced mb-8 to mb-4 */}
+      <div className="flex flex-row w-full mb-2 mt-2">
+        {" "}
+        {/* Reduced mb-8 to mb-4 */}
         <div className="w-4/5 pr-4">
           <iframe
             width="100%"
             height="315"
-            src="https://www.youtube.com/embed/-pPAqOoUk3w" // Correct YouTube embed URL for Butterfly Pose
+            src="https://www.youtube.com/embed/gj-Zx0wPjjA" // Correct YouTube embed URL for Butterfly Pose
             title="Butterfly Pose Tutorial"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -58,13 +60,17 @@ function ButterflyPose() {
           ></iframe>
         </div>
         <div className="w-1/4 pl-4">
-          <h2 className="font-bold text-2xl mb-2">Butterfly Pose Instructions</h2>
+          <h2 className="font-bold text-2xl mb-2">
+            Butterfly Pose Instructions
+          </h2>
           <p>
-            1. Sit on the floor with your spine straight and legs extended in front of you.
+            1. Sit on the floor with your spine straight and legs extended in
+            front of you.
             <br />
             2. Bend your knees and bring the soles of your feet together.
             <br />
-            3. Hold your feet with your hands and try to bring your heels closer to your pelvis.
+            3. Hold your feet with your hands and try to bring your heels closer
+            to your pelvis.
             <br />
             4. Gently flap your knees up and down like butterfly wings.
             <br />
@@ -72,7 +78,9 @@ function ButterflyPose() {
           </p>
         </div>
       </div>
-      <div className="flex flex-row items-start space-x-4 mt-2"> {/* Adjusted margin-top to mt-2 for buttons */}
+      <div className="flex flex-row items-start space-x-4 mt-2">
+        {" "}
+        {/* Adjusted margin-top to mt-2 for buttons */}
         {!isActive ? (
           <button
             className={`bg-[#F38FB1] text-white py-2 px-4 rounded-full transition-transform transform hover:scale-105 ${
@@ -99,7 +107,9 @@ function ButterflyPose() {
         </button>
       </div>
       <div className="mt-4">
-        <span className="text-xl font-bold">{isActive ? `Time Left: ${timeLeft}s` : `Paused: ${timeLeft}s`}</span>
+        <span className="text-xl font-bold">
+          {isActive ? `Time Left: ${timeLeft}s` : `Paused: ${timeLeft}s`}
+        </span>
       </div>
     </motion.div>
   );

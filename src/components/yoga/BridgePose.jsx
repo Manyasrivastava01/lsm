@@ -50,7 +50,7 @@ function BridgePose() {
           <iframe
             width="100%"
             height="315"
-            src="https://www.youtube.com/embed/vAbQHyV9yLo" // Correct YouTube embed URL
+            src="https://www.youtube.com/embed/XUcAuYd7VU0" // Correct YouTube embed URL
             title="Bridge Pose Tutorial"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -62,7 +62,8 @@ function BridgePose() {
           <p>
             1. Lie on your back with your knees bent.
             <br />
-            2. Lift your hips towards the ceiling while keeping your shoulders grounded.
+            2. Lift your hips towards the ceiling while keeping your shoulders
+            grounded.
             <br />
             3. Hold the pose for 30 seconds to a minute.
           </p>
@@ -95,7 +96,9 @@ function BridgePose() {
         </button>
       </div>
       <div className="mt-4">
-        <span className="text-xl font-bold">{isActive ? `Time Left: ${timeLeft}s` : `Paused: ${timeLeft}s`}</span>
+        <span className="text-xl font-bold">
+          {isActive ? `Time Left: ${timeLeft}s` : `Paused: ${timeLeft}s`}
+        </span>
       </div>
     </motion.div>
   );

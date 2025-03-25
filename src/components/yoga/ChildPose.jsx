@@ -18,40 +18,15 @@ function ChildPose() {
 
   const startTimer = () => {
     setIsActive(true);
-    setTimerId(setInterval(() => {
-      setTimeLeft((prevTime) => {
-        // Play alarm at 30 seconds and 60 seconds
-        if (prevTime === 31) { // Play when it reaches 30 seconds
-          playAlarm();
-        } else if (prevTime === 2) { // Play when it reaches 60 seconds
-          playAlarm();
-        }
-
-        if (prevTime <= 1) {
-          clearInterval(timerId);
-          setIsActive(false);
-          return 0;
-        }
-
-        return prevTime - 1;
-      });
-    }, 1000));
-  };
-
-  const pauseTimer = () => {
-    setIsActive(false);
-    clearInterval(timerId);
-  };
-
-  const resumeTimer = () => {
-    if (!isActive && timeLeft > 0) {
-      setIsActive(true);
-      setTimerId(setInterval(() => {
+    setTimerId(
+      setInterval(() => {
         setTimeLeft((prevTime) => {
           // Play alarm at 30 seconds and 60 seconds
-          if (prevTime === 31) { // Play when it reaches 30 seconds
+          if (prevTime === 31) {
+            // Play when it reaches 30 seconds
             playAlarm();
-          } else if (prevTime === 1) { // Play when it reaches 60 seconds
+          } else if (prevTime === 2) {
+            // Play when it reaches 60 seconds
             playAlarm();
           }
 
@@ -63,7 +38,40 @@ function ChildPose() {
 
           return prevTime - 1;
         });
-      }, 1000));
+      }, 1000)
+    );
+  };
+
+  const pauseTimer = () => {
+    setIsActive(false);
+    clearInterval(timerId);
+  };
+
+  const resumeTimer = () => {
+    if (!isActive && timeLeft > 0) {
+      setIsActive(true);
+      setTimerId(
+        setInterval(() => {
+          setTimeLeft((prevTime) => {
+            // Play alarm at 30 seconds and 60 seconds
+            if (prevTime === 31) {
+              // Play when it reaches 30 seconds
+              playAlarm();
+            } else if (prevTime === 1) {
+              // Play when it reaches 60 seconds
+              playAlarm();
+            }
+
+            if (prevTime <= 1) {
+              clearInterval(timerId);
+              setIsActive(false);
+              return 0;
+            }
+
+            return prevTime - 1;
+          });
+        }, 1000)
+      );
     }
   };
 
@@ -86,7 +94,7 @@ function ChildPose() {
           <iframe
             width="100%"
             height="315"
-            src="https://www.youtube.com/embed/ZkexBo_0klw" // Correct format for embedding
+            src="https://www.youtube.com/embed/2MJGg-dUKh0" // Correct format for embedding
             title="Child Pose Tutorial"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -96,7 +104,7 @@ function ChildPose() {
         <div className="w-1/4 pl-4">
           <h2 className="font-bold text-2xl mb-2">Child Pose Instructions</h2>
           <p>
-            1. Start by kneeling on the floor.  
+            1. Start by kneeling on the floor.
             <br />
             2. Sit back on your heels and stretch your arms forward.
             <br />
