@@ -4,12 +4,12 @@ import { motion } from "framer-motion"; // Import Framer Motion
 import landingPic from "../assets/Back_Top.svg";
 import landingBottom from "../assets/Back_Bottom.svg";
 import Navbar from "../components/navbar";
-import Mom from "../assets/Mom.png";
 import Pose from "../assets/Pose.png";
 import Profile from "../assets/profile.png";
 import Therapy from "../assets/ther.png";
 import Activity from "../assets/ACT.png";
 import Thoughts from "../assets/THOU.png";
+import Logo1 from "../assets/Logo1.png";
 
 function Landing() {
   return (
@@ -59,11 +59,11 @@ Digital Health & Fintess for India            </motion.div>
               </Link>
             </div>
           </div>
-          <div className="w-1/6 py-36">
+          <div className="w-[900px] py-36 relative">
             <motion.img 
-              src="{Mom}" 
+              src={Logo1}
               alt="" 
-              initial={{ opacity: 0 }} 
+              className="w-[900px] h-[700px] ml-[-300px] mt-[-250px]"             initial={{ opacity: 0 }} 
               animate={{ opacity: 1 }} 
               transition={{ duration: 0.5, delay: 0.4 }} 
             />
@@ -71,21 +71,22 @@ Digital Health & Fintess for India            </motion.div>
         </div>
       </div>
 
-      <div className="flex flex-row justify-center" id="aboutUsSection">
+      <div className=" flex flex-row justify-center" id="aboutUsSection">
         <motion.div 
           className="w-[15rem] mr-20"
           initial={{ opacity: 0, scale: 0.8 }} 
           animate={{ opacity: 1, scale: 1 }} 
           transition={{ duration: 0.5, delay: 0.6 }} 
         >
-          <img src={Pose} alt="" />
+          <img src={Pose} alt=""          className="w-[600px] h-[400px] "
+          />
         </motion.div>
         <div className="flex flex-col">
           <motion.div className="text-5xl font-bold pb-4">
             About Us
           </motion.div>
           <motion.div className="text-4xl font-bold py-2">
-            Assistance before & <br /> After Pregnancy
+            Assistance in becoming a  <br /> Better Version Of Yourself 
           </motion.div>
           <motion.div 
             className="font-light pt-6"
@@ -93,16 +94,16 @@ Digital Health & Fintess for India            </motion.div>
             animate={{ opacity: 1 }} 
             transition={{ duration: 0.5, delay: 0.8 }} 
           >
-            "At Motherly, we understand the transformative journey of
-            pregnancy <br />
-            and motherhood. Our platform is dedicated to <br />
-            nurturing the well-being of expectant mothers through tailored
+            "At SwasthaVerse, we understand the transformative journey of
+            becoming healthier <br />
+            and stronger. Our platform is dedicated to <br />
+            improve the lifestyle of people of all ages through
             <br />
-            activities such as yoga, meditation, and curated reading
-            <br /> materials. We strive to provide compassionate guidance to
-            <br /> empower mothers in preventing postpartum depression and
+            activities such as yoga, meditation, and curated excercise
+            <br /> routines. We strive to provide compassionate guidance to
+            <br /> empower individuals in preventing a sedentary lifestyle and
             <br />
-            fostering a positive transition into motherhood."
+            fostering a positive transition into healthier version."
           </motion.div>
         </div>
       </div>
@@ -127,8 +128,8 @@ Digital Health & Fintess for India            </motion.div>
             {[
               { img: Profile, label: "Create Profile" },
               { img: Activity, label: "Activities" },
-              { img: Thoughts, label: "Journal your thoughts" },
-              { img: Therapy, label: "Therapy Assistance" },
+              { img: Thoughts, label: "Be Consistent" },
+              { img: Therapy, label: "Trainer Assistance" },
             ].map((item, index) => (
               <motion.div
                 key={index}
