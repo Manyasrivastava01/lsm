@@ -44,7 +44,7 @@ function GarlandPose() {
           <iframe
             width="100%"
             height="315"
-            src="https://www.youtube.com/embed/lZYZK2W-UqY" // Correct YouTube embed URL
+            src="https://www.youtube.com/embed/HnM6kfwhzd0" // Correct YouTube embed URL
             title="Garland Pose Tutorial"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

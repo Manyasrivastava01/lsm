@@ -97,13 +97,13 @@ function Profile() {
                 whileHover={{ scale: 1.1, y: -5 }}
                 transition={{ duration: 0.3 }}
               />
-              <Link to="/user/journal"> {/* Use Link for navigation */}
+              <Link to="/user/workout"> {/* Use Link for navigation */}
                 <motion.button
                   className="bg-[#F38FB1] w-2/3 py-3 rounded-full my-3 text-white font-bold justify-center"
                   whileHover={{ scale: 1.1, y: -5 }}
                   transition={{ duration: 0.3 }}
                 >
-                  Journal
+                  Workout
                 </motion.button>
               </Link>
             </div>
