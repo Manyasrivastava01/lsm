@@ -1,13 +1,14 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import Med from "../assets/Med.png";
 import Yoga from "../assets/Yog.png";
 import Read from "../assets/Read.png";
 import Food from "../assets/Food.png";
-import Journal from "../assets/Jour.png";
+import Workout from "../assets/Food.png";
 import Music from "../assets/Mus.png";
 import ReadingSection from "./reading/ReadingSection";
-import JournalMain from "./journal/JournalMain"; // Import JournalMain
+import HomeWorkoutSection from "./workout/HomeWorkoutSection"; // Import JournalMain
 import MeditationSection from "./meditation/MeditationSection"; // Import MeditationSection
 import YogaSection from "./yoga/yogaa"; // Import your Yoga section
 
@@ -18,8 +19,8 @@ function Prof() {
     switch (currentSection) {
       case "reading":
         return <ReadingSection />;
-      case "journal":
-        return <JournalMain />;
+      case "workout":
+        return <HomeWorkoutSection />;
       case "meditation":
         return <MeditationSection />;
       case "yoga": // New case for Yoga section
@@ -105,19 +106,21 @@ function Prof() {
                 <div className="flex-1 flex-col justify-center items-center">
                   <motion.img
                     className="w-2/3 bg-[#FFF4F4] p-4"
-                    src={Journal}
-                    alt="Journal"
+                    src={Workout}
+                    alt="Workout"
                     whileHover={{ scale: 1.1, y: -5 }}
                     transition={{ duration: 0.3 }}
-                    onClick={() => setCurrentSection("journal")} // Set the current section to journal
+                    // onClick={() => setCurrentSection("workout")} // Set the current section to journal
+                    onClick={() => navigate("/user/workout")}
                   />
                   <motion.button
                     className="bg-[#F38FB1] w-2/3 py-3 rounded-full my-3 text-white font-bold justify-center" // Updated class to include text-white and font-bold
                     whileHover={{ scale: 1.1, y: -5 }}
                     transition={{ duration: 0.3 }}
-                    onClick={() => setCurrentSection("journal")}
+                    // onClick={() => setCurrentSection("workout")}
+                    onClick={() => navigate("/user/workout")}
                   >
-                    Journal
+                    workout
                   </motion.button>
                 </div>
                 <div className="flex-1 flex-col justify-center items-center">
