@@ -10,6 +10,7 @@ import ReadingSection from "./components/reading/ReadingSection"; // Import Read
 import JournalMain from "./components/journal/JournalMain"; // Import JournalMain
 import MeditationSection from "./components/meditation/MeditationSection"; // Import MeditationSection
 import YogaSection from "./components/yoga/yogaa"; // Import YogaSection
+import FoodLanding from "./components/food/FoodLanding"; // Import FoodLanding
 
 function App() {
   return (
@@ -20,12 +21,14 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/user" element={<Profile />} />
-          <Route path="/contacts" element={<Contacts />} /> {/* Add Contacts route */}
+          <Route path="/contacts" element={<Contacts />} />{" "}
+          {/* Add Contacts route */}
           {/* Define routes for sections */}
           <Route path="/user/reading" element={<ReadingSection />} />
           <Route path="/user/journal" element={<JournalMain />} />
           <Route path="/user/meditation" element={<MeditationSection />} />
           <Route path="/user/yoga" element={<YogaSection />} />
+          <Route path="/user/food" element={<FoodLanding />} />
         </Routes>
       </Router>
     </div>
