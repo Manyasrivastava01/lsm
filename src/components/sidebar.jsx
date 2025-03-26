@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";  // Import Link from react-router-dom
-import Image from "../assets/Mom.png";
+import Image from "../assets/Logo1.png";
 
 function Sidebar() {
   return (

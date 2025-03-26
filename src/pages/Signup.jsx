@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import Image from "../assets/Mom.png";
+import Image from "../assets/Logo1.png";
 import Navbar from "../components/navbar";
 import { useNavigate } from "react-router-dom";
 
@@ -34,7 +34,7 @@ const Signup = () => {
       <Navbar />
       <div className="flex flex-row bg-[#FFF2F2] overscroll-y-none">
         <div className="flex-1 flex justify-center items-center">
-          <img className="w-2/3" src={Image} alt="" />
+        <img  className="w-3/4 max-w-[900px] transition-transform transform scale-125 hover:scale-150"  src={Image} alt="" />
         </div>
         <div className="flex-1 bg-white mx-64 my-36 flex-cols border-2 border-pink-300">
           <div className="px-16 pt-8 text-4xl font-bold">SignUp</div>
