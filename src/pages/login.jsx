@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Image from "../assets/Mom.png";
+import Image from "../assets/Logo1.png";
 import Navbar from "../components/navbar";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
@@ -27,7 +27,7 @@ const Login = () => {
       <Navbar />
       <div className="flex flex-row bg-[#FFF2F2] h-full">
         <div className="flex-1 flex justify-center items-center">
-          <img className="w-2/3 transition-transform transform hover:scale-105" src={Image} alt="" />
+          <img  className="w-3/4 max-w-[900px] transition-transform transform scale-125 hover:scale-150"  src={Image} alt="" />
         </div>
         <div className="flex-1 bg-white mx-64 my-40 flex-cols border-2 border-pink-300 transition-transform transform hover:scale-105">
           <div className="px-16 pt-16 text-4xl font-bold">Login</div>
