@@ -6,7 +6,7 @@ import Med from "../assets/Med.png";
 import Yoga from "../assets/Yog.png";
 import Read from "../assets/Read.png";
 import Food from "../assets/Food.png";
-import Journal from "../assets/Jour.png";
+import Pose from "../assets/Pose.png";
 import Music from "../assets/Mus.png";
 
 function Profile() {
@@ -25,7 +25,9 @@ function Profile() {
                 whileHover={{ scale: 1.1, y: -5 }}
                 transition={{ duration: 0.3 }}
               />
-              <Link to="/user/meditation"> {/* Use Link for navigation */}
+              <Link to="/user/meditation">
+                {" "}
+                {/* Use Link for navigation */}
                 <motion.button
                   className="bg-[#F38FB1] w-2/3 py-3 rounded-full my-3 text-white font-bold justify-center"
                   whileHover={{ scale: 1.1, y: -5 }}
@@ -43,7 +45,9 @@ function Profile() {
                 whileHover={{ scale: 1.1, y: -5 }}
                 transition={{ duration: 0.3 }}
               />
-              <Link to="/user/yoga"> {/* Use Link for navigation */}
+              <Link to="/user/yoga">
+                {" "}
+                {/* Use Link for navigation */}
                 <motion.button
                   className="bg-[#F38FB1] w-2/3 py-3 rounded-full my-3 text-white font-bold justify-center"
                   whileHover={{ scale: 1.1, y: -5 }}
@@ -61,7 +65,9 @@ function Profile() {
                 whileHover={{ scale: 1.1, y: -5 }}
                 transition={{ duration: 0.3 }}
               />
-              <Link to="/user/reading"> {/* Use Link for navigation */}
+              <Link to="/user/reading">
+                {" "}
+                {/* Use Link for navigation */}
                 <motion.button
                   className="bg-[#F38FB1] w-2/3 py-3 rounded-full my-3 text-white font-bold justify-center"
                   whileHover={{ scale: 1.1, y: -5 }}
@@ -92,12 +98,14 @@ function Profile() {
             <div className="flex-1 flex-col justify-center items-center">
               <motion.img
                 className="w-2/3 bg-[#FFF4F4] p-4"
-                src={Journal}
-                alt="Journal"
+                src={Pose}
+                alt="Pose"
                 whileHover={{ scale: 1.1, y: -5 }}
                 transition={{ duration: 0.3 }}
               />
-              <Link to="/user/workout"> {/* Use Link for navigation */}
+              <Link to="/user/workout">
+                {" "}
+                {/* Use Link for navigation */}
                 <motion.button
                   className="bg-[#F38FB1] w-2/3 py-3 rounded-full my-3 text-white font-bold justify-center"
                   whileHover={{ scale: 1.1, y: -5 }}
