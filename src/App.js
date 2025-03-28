@@ -40,11 +40,14 @@ import Login from "./pages/login.jsx";
 import Signup from "./pages/Signup.jsx";
 import Profile from "./pages/profile.jsx";
 import Contacts from "./pages/Contacts.jsx";
+
 import ReadingSection from "./components/reading/ReadingSection";
 // import JournalMain from "./components/journal/JournalMain";
-import MeditationSection from "./components/meditation/MeditationSection";
-import YogaSection from "./components/yoga/yogaa";
 import HomeWorkoutSection from "./components/workout/HomeWorkoutSection"; // Import HomeWorkoutSection
+
+import MeditationSection from "./components/meditation/MeditationSection"; // Import MeditationSection
+import YogaSection from "./components/yoga/yogaa"; // Import YogaSection
+import FoodLanding from "./components/food/FoodLanding"; // Import FoodLanding
 
 function App() {
   return (
@@ -60,7 +63,9 @@ function App() {
           {/* <Route path="/user/journal" element={<JournalMain />} /> */}
           <Route path="/user/meditation" element={<MeditationSection />} />
           <Route path="/user/yoga" element={<YogaSection />} />
-          <Route path="/user/workout" element={<HomeWorkoutSection />} /> {/* Add HomeWorkoutSection route */}
+          <Route path="/user/workout" element={<HomeWorkoutSection />} />{" "}
+          {/* Add HomeWorkoutSection route */}
+          <Route path="/user/food" element={<FoodLanding />} />
         </Routes>
       </Router>
     </div>

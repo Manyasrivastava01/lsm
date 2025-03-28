@@ -143,8 +143,8 @@ function Prof() {
             </div>
           </div>
         );
-      }
-    };
+    }
+  };
 
   return renderSection(); // Render the current section
 }

@@ -87,13 +87,15 @@ function Profile() {
                 whileHover={{ scale: 1.1, y: -5 }}
                 transition={{ duration: 0.3 }}
               />
-              <motion.button
-                className="bg-[#F38FB1] w-2/3 py-3 rounded-full my-3 text-white font-bold justify-center"
-                whileHover={{ scale: 1.1, y: -5 }}
-                transition={{ duration: 0.3 }}
-              >
-                Food
-              </motion.button>
+              <Link to="/user/food">
+                <motion.button
+                  className="bg-[#F38FB1] w-2/3 py-3 rounded-full my-3 text-white font-bold justify-center"
+                  whileHover={{ scale: 1.1, y: -5 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  Food
+                </motion.button>
+              </Link>
             </div>
             <div className="flex-1 flex-col justify-center items-center">
               <motion.img
