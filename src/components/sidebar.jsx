@@ -20,9 +20,10 @@ function Sidebar() {
             display: 'inline-block', // Required for scaling effect
           }}
         >
-          Veena Rathi
+          Ritika Priyadarshani
         </div>
-        <div className="text-xl">62 days left</div>
+        <div className="text-xl">Age : 21 </div>
+        <div className="text-xl">Diet : Vegetarian</div>
       </div>
       <div className="flex flex-col pb-8 text-black">
         <div className="py-2">
