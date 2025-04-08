@@ -2,13 +2,15 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 function MindfulMeditation() {
-  const [currentVideo, setCurrentVideo] = useState("https://www.youtube.com/embed/9SQwSqAQ9UQ"); // Default video
+  const [currentVideo, setCurrentVideo] = useState(
+    "https://www.youtube.com/embed/ssss7V1_eyA"
+  ); // Default video
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0); // Track current video index
 
   const videos = [
     {
       title: "Mindful Meditation 1",
-      url: "https://www.youtube.com/embed/9SQwSqAQ9UQ",
+      url: "https://www.youtube.com/embed/ssss7V1_eyA",
     },
     {
       title: "Mindful Meditation 2",
@@ -58,14 +60,14 @@ function MindfulMeditation() {
 
       {/* Button Container */}
       <div className="bg-[#FFF4F4] p-6 rounded-lg shadow-md ml-4 w-80 h-[400px]">
-        
         {/* Currently Playing Button */}
         <motion.button
           className="bg-[#FFF4F4] w-full py-2 rounded-none my-1 font-bold text-[#F38FB1] border border-[#F38FB1] text-center"
           whileHover={{ scale: 1.05 }} // Scale effect on hover
           whileTap={{ scale: 0.95 }} // Scale effect when tapped
         >
-          Currently Playing: {currentVideoIndex + 1} / {videos.length} {/* Display current video index */}
+          Currently Playing: {currentVideoIndex + 1} / {videos.length}{" "}
+          {/* Display current video index */}
         </motion.button>
 
         {/* Video Selection Buttons */}

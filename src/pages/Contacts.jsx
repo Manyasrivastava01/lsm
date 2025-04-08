@@ -40,8 +40,8 @@ function Contacts() {
             <div className="mt-3 text-lg font-bold text-black">Shweta Anand</div>
             <div className="mt-1 text-gray-700">Experience: 12 years</div>
             <div className="mt-1 text-gray-600">
-              MPhil in Psychology & B.Sc.(Hons) <br />
-              Clinical Psychologist
+            Certified Personal Trainer, Nutrition Specialist<br/>
+            Health & Fitness Consultant
             </div>
           </div>
 
@@ -55,8 +55,8 @@ function Contacts() {
             <div className="mt-3 text-lg font-bold text-black">Priyanka Rao</div>
             <div className="mt-1 text-gray-700">Experience: 3.5 years</div>
             <div className="mt-1 text-gray-600">
-              MSc. In Human Development and Childhood Studies <br />
-              Child Psychologist
+            MSc in Nutrition & Dietetics, Certified Sports Nutritionist<br/>
+            Senior Dietitian & Wellness Consultant
             </div>
           </div>
 
@@ -70,8 +70,8 @@ function Contacts() {
             <div className="mt-3 text-lg font-bold text-black">Khilly Marwaha</div>
             <div className="mt-1 text-gray-700">Experience: 7 years</div>
             <div className="mt-1 text-gray-600">
-              Clinical Psychology <br />
-              Psychologist and Lactation Counselor
+            BSc in Food Science, Diploma in Sports Nutrition<br/>
+            Fitness & Nutrition Coach
             </div>
           </div>
 
@@ -85,8 +85,8 @@ function Contacts() {
             <div className="mt-3 text-lg font-bold text-black">Gagandeep Kaur</div>
             <div className="mt-1 text-gray-700">Experience: 5 years</div>
             <div className="mt-1 text-gray-600">
-              MA in Psychology, Diploma in Behavioural Development <br />
-              Clinical Psychologist
+            Registered Dietitian, Holistic Nutritionist<br/>
+            Lifestyle & Weight Management Coach
             </div>
           </div>
 

@@ -7,8 +7,8 @@ import { useNavigate } from "react-router-dom";
 const Signup = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [months, setMonths] = useState("");
-  const [days, setDays] = useState("");
+  const [foodoptions, setFoodOption] = useState("");
+  const [age, setAge] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const history = useNavigate();
 
@@ -16,8 +16,8 @@ const Signup = () => {
     if (
       username.trim() === "" ||
       password.trim() === "" ||
-      months.trim() === "" ||
-      days.trim() === ""
+      foodoptions.trim() === "" ||
+      age.trim() === "" 
     ) {
       setSubmitted(true);
     } else {
@@ -60,35 +60,35 @@ const Signup = () => {
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
+          <div className="px-16 pt-8 font-bold">
+            Vegetarian or Non-vegetarian
+            <input
+              className="shadow appearance-none border rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline my-2"
+              id="foodoptions"
+              type="text"
+              placeholder="Vegetarian or Non-vegaterian"
+              value={foodoptions}
+              onChange={(e) => setFoodOption(e.target.value)}
+            />
+          </div>
           <div className="px-16 pt-4 font-bold flex flex-rows gap-x-4">
             <div className="flex-1">
-              Enter Months
+              Enter Age
               <input
                 className="shadow appearance-none border rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline my-2"
-                id="months"
+                id="age"
                 type="text"
-                placeholder="Months"
-                value={months}
-                onChange={(e) => setMonths(e.target.value)}
+                placeholder="Age"
+                value={age}
+                onChange={(e) => setAge(e.target.value)}
               />
             </div>
-            <div className="flex-1">
-              Enter Days
-              <input
-                className="shadow appearance-none border rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline my-2"
-                id="days"
-                type="text"
-                placeholder="Days"
-                value={days}
-                onChange={(e) => setDays(e.target.value)}
-              />
-            </div>
+            
           </div>
           {submitted &&
             (username.trim() === "" ||
               password.trim() === "" ||
-              months.trim() === "" ||
-              days.trim() === "") && (
+              age.trim() === "") && (
               <div className="px-16 pt-2 text-red-600">
                 Please fill all fields
               </div>
